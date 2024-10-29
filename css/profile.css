@@ -1,0 +1,58 @@
+.profile{background-color:#f3f3f3}
+.wrap__header{overflow:visible;margin:0 auto;width:1200px;padding:150px 0;background:repeating-linear-gradient(90deg,rgba(90,90,90,.1) 1px,rgba(90,90,90,.1) 2px,#f3f3f3 1px,#f3f3f3 50%)}
+.wrap__header *{display:block;font-size:14px;line-height:25px;font-weight:400;font-style:normal}
+.wrap__header .name{padding-bottom:50px;font-size:70px;line-height:70px;font-weight:500}
+.wrap__header address{margin-bottom:30px}
+.wrap__header .mail,.wrap__header .num{font-weight:500;color:#0a3699}
+.wrap__header a{margin-top:30px}
+.wrap__header .face{position:absolute;top:100px;right:0}
+.wrap__header .face img{width:180px}
+.wrap__extra{margin:0 auto;padding:150px 0;width:100%}
+.wrap__extra .wrap__cover{margin:0 auto;width:1200px}
+.wrap__extra .wrap__cover ol{margin:20px 0 0 10px}
+.wrap__extra .wrap__cover ol li{line-height:28px}
+.wrap__extra.bg__white{background-color:#fff}
+.wrap__main{overflow:visible;margin:0 auto;padding:150px 0;width:1200px;background:repeating-linear-gradient(90deg,rgba(90,90,90,.1) 1px,rgba(90,90,90,.1) 2px,#f3f3f3 1px,#f3f3f3 50%)}
+.wrap__main .skill .program li{margin-top:5px}
+.wrap__main .skill .program strong{display:inline-block;width:150px;font-size:14px;line-height:28px}
+.wrap__main .skill .program span{display:inline-block;font-size:14px;line-height:28px}
+section+section{margin-top:250px}
+section .wrap__box{margin:0 auto;padding:0 27px 0 80px}
+section .wrap__box .tit{display:inline-block;width:calc((100% - 5px)/ 2);margin-bottom:25px;font-size:28px;font-weight:700;vertical-align:top}
+section .wrap__box .right{display:inline-block;width:calc((100% - 5px)/ 2)}
+section .wrap__box .subtit{display:inline-block;font-size:14px;font-weight:700;line-height:28px}
+section .wrap__box .subrole{position:relative;display:inline-block;padding-left:10px;margin-left:10px;font-size:14px;font-weight:400;line-height:28px}
+section .wrap__box .subrole:after{content:'';position:absolute;left:0;top:9px;width:1px;height:14px;background-color:#000}
+section .wrap__box .subrole .team{display:inline-block;padding-left:3px;font-size:11px}
+section .wrap__box em{display:block;font-size:11px;font-weight:400}
+section .wrap__box .desc{padding:10px 14px;margin-top:14px;background-color:#fff;-webkit-box-shadow:0 0 10px rgba(0,0,0,.1);box-shadow:0 0 10px rgba(0,0,0,.1)}
+section .wrap__box .desc p{font-size:14px;line-height:25px}
+section .wrap__box .desc span{font-size:14px}
+section .wrap__box .desc .desc__skill{margin-top:15px}
+section .wrap__box>ul{font-size:0}
+section .wrap__box>ul>li{position:relative;font-size:14px}
+section .wrap__box>ul>li+li{margin-top:50px}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .wrap__header{width: 800px; max-width: 90%;}
+  .wrap__extra .wrap__cover{width: 800px; max-width: 90%;}
+  .wrap__main{width: 800px; max-width: 90%;}
+}
+@media screen and (max-width: 768px) {
+  section+section{margin-top: 70px;}
+  section .wrap__box{padding: 0 0 0 10px;}
+  section .wrap__box .tit{display: block; width: 100%; font-size: 20px;}
+  section .wrap__box .right{display: block; width: 100%;}
+  .wrap__header{padding: 70px 0 70px 0;}
+  .wrap__header .name{padding-bottom: 30px; font-size: 50px; }
+  .wrap__extra{padding: 50px 0;}
+  section .wrap__box>ul>li+li{margin-top: 20px;}
+
+  .wrap__main{padding: 70px 0 130px 0;}
+
+
+  
+}
