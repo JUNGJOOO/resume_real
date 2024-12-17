@@ -31,9 +31,8 @@ header h1 { font-size:48px;line-height:50px;font-weight:800;text-align:center;-w
 header p  { margin-top: 30px; font-size: 18px; font-weight: 500; text-align: center;}
 
 /* tab */
-.tab		   { display: block; width: 50%; margin: 0 auto 20px; font-size: 0;}
-.tab div 	   { display: inline-block; padding: 10px 40px; border-radius: 25px; border: 2px solid #f3f0ef; background: #f3f0ef; box-shadow: 3px 3px 5px rgba(0,0,0,0.15), -3px -3px 5px rgba(255,255,255,0.6); transition: all 0.3s; text-align: center; font-size: 15px; cursor: pointer;}
-.tab div+div   { margin-left: 10px;}
+.tab		   { display: block; width: 100%; margin: 0 auto 20px; font-size: 0; text-align: center;}
+.tab div 	   { display: inline-block; padding: 10px 40px; margin: 10px; border-radius: 25px; border: 2px solid #f3f0ef; background: #f3f0ef; box-shadow: 3px 3px 5px rgba(0,0,0,0.15), -3px -3px 5px rgba(255,255,255,0.6); transition: all 0.3s; text-align: center; font-size: 15px; cursor: pointer;}
 .tab div.is_on,
 .tab div:hover { background-color: #fff; transition: all 0.2s ease-in-out; box-shadow: inset 2px 2px 5px #cdcdcd, inset -2px -2px 5px #ffffff, 2px 2px 5px #cdcdcd, -2px -2px 5px #ffffff;}
 
@@ -79,6 +78,7 @@ header p  { margin-top: 30px; font-size: 18px; font-weight: 500; text-align: cen
 .inbox_wrap .sub em + em { margin-right: 5px;}
 .inbox_wrap .sub .tag1 	 { border: 1px solid #505050;}
 .inbox_wrap .sub .tag2 	 { background-color: #505050; border: 1px solid #505050; color: #fff;}
+.inbox_wrap .sub .tag3 	 { background-color: #fea32d; border: 1px solid #fea32d; color: #fff;}
 
 @media screen and (max-width: 1200px) {
 	.wrap{width: 800px; max-width: 90%;}
