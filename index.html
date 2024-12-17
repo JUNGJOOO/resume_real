@@ -26,6 +26,7 @@
             <div>굿리치(최근)</div>
             <div>타나</div>
             <div>스핀프로토콜</div>
+            <div>개인작업</div>
         </div>
 		<div class="container">
             <ol class="item_list">
@@ -358,7 +359,7 @@
                         <ul class="link">
                             <li><a href="https://jungjooo.github.io/portfolio/spin/spin/html/login.html" target="_blank">🧙 Influencer 반응형 퍼블리싱 보러가기</a></li>
                             <li><a href="https://jungjooo.github.io/portfolio/spin/spin/admin/dash_board.html" target="_blank">🧙 Admin 반응형 퍼블리싱 보러가기</a></li>
-                            <li class="unuse"><a href="https://jungjooo.github.io/portfolio-design/essay/essay_wrap/essay_spin.html" target="_blank">🗯️ 디자인 에세이 보러가기</a></li>
+                            <li class="unuse"><a href="https://jungjooo.github.io/essay/essay_wrap/essay_spin.html" target="_blank">🗯️ 디자인 에세이 보러가기</a></li>
                         </ul>
                         <div class="sub">
                             <span class="info">2018.11 ~ 2019.09 / SPIN Protocol</span>
@@ -386,7 +387,7 @@
                         </div>
                     </div>
                 </li>
-		<li class="item item03">
+		        <li class="item item04">
                     <div class="thumb" style="background-color: #1c1c1c;">
                         <a href="https://jungjooo.github.io/portfolio/else/eone2/eone.html" target="_blank">
                             <img src="https://jungjooo.github.io/resume_real/images/device_eone.png" alt="이원 목업"/>
@@ -397,17 +398,17 @@
                         <ul class="link">
                             <li><a href="https://jungjooo.github.io/portfolio/else/eone2/eone.html" target="_blank">🧙 반응형 퍼블리싱 보러가기</a></li>
                             <li><a href="https://jungjooo.github.io/portfolio/iframe/pc_eone.html" target="_blank">📌 iframe으로 보러가기</a></li>
-                            <li><a href="https://jungjooo.github.io/portfolio-design/essay/essay_wrap/essay_eone.html" target="_blank">🗯️ 디자인 에세이 보러가기</a></li>
+                            <li><a href="https://jungjooo.github.io/essay/essay_wrap/essay_eone.html" target="_blank">🗯️ 디자인 에세이 보러가기</a></li>
                             <li>첫 웹디자인 작업이자, 첫 퍼블리싱한 작업</li>
                         </ul>
                         <div class="sub">
                             <span class="info">2017.10 ~ 2018.03</span>
                             <em class="tag2">개인작업</em>
-				<em class="tag2">웹디자인</em>
+				            <em class="tag2">웹디자인</em>
                         </div>
                     </div>
                 </li>
-                <li class="item item03">
+                <li class="item item04">
                     <div class="thumb" style="background-color: #ededec;">
                         <a href="https://jungjooo.github.io/portfolio/else/nendo/nendo.html" target="_blank">
                             <img src="https://jungjooo.github.io/resume_real/images/device_nendo.png" alt="넨도 목업"/>
@@ -418,12 +419,12 @@
                         <ul class="link">
                             <li><a href="https://jungjooo.github.io/portfolio/else/nendo/nendo.html" target="_blank">🧙 반응형 퍼블리싱 보러가기</a></li>
                             <li><a href="https://jungjooo.github.io/portfolio/iframe/response_nendo.html" target="_blank">📌 iframe 반응형으로 보러가기</a></li>
-                            <li><a href="https://jungjooo.github.io/portfolio-design/essay/essay_wrap/essay_nendo.html" target="_blank">🗯️ 디자인 에세이 보러가기</a></li>
+                            <li><a href="https://jungjooo.github.io/essay/essay_wrap/essay_nendo.html" target="_blank">🗯️ 디자인 에세이 보러가기</a></li>
                         </ul>
                         <div class="sub">
                             <span class="info">2017.10 ~ 2018.03</span>
                             <em class="tag2">개인작업</em>
-				<em class="tag2">웹디자인</em>
+				            <em class="tag2">웹디자인</em>
                         </div>
                     </div>
                 </li>
@@ -510,7 +511,16 @@
                 }
             }             
         });
-
+        tabBtn[4].addEventListener("click", function(){
+            
+            for(var i=0; i<itemDiv.length; i++){
+                if(itemDiv[i].classList.contains("item04")==false){
+                    itemDiv[i].classList.remove("is_active");
+                }else {
+                    itemDiv[i].classList.add("is_active"); 
+                }
+            }             
+        });
 
 
 
