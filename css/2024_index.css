@@ -72,7 +72,7 @@ header p  { margin-top: 30px; font-size: 18px; font-weight: 500; text-align: cen
 .inbox_wrap .link li    { display: block; line-height: 1.8; color: #848484}
 .inbox_wrap .link li a b{ font-size: 16px; font-weight: 700;}
 .item_list > li:hover .inbox_wrap .link li a { font-weight: 600; color: #000;}
-.inbox_wrap .sub         { display:block;width:calc(100% - 60px); margin-top: auto;}
+.inbox_wrap .sub         { display:block;/*width:calc(100% - 60px);*/ width: 100%; margin-top: auto;}
 .inbox_wrap .sub .info   { display: block; width: 100%; color: #969696;}
 .inbox_wrap .sub em 	 { display: inline-block; min-width: 30px; margin-top: 8px; padding: 0 8px; border-radius: 15px; line-height: 23px; font-weight: 500; text-align: center; vertical-align: top;}
 .inbox_wrap .sub em + em { margin-right: 5px;}
