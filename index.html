@@ -13,14 +13,15 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<body class="wrap">
-	<header>
-		<div class="container">
-			<h1>WEB PORTFOLIO</h1>
-			<p>안녕하세요. 퍼블리셔 이정주입니다.</p>
-        </div>
-	</header>
-	<main>
+<body>
+    <header class="hide">
+        <h1>Jeongju's Web Publisher Portfolio - Hello! I'm Jeongju</h1>
+    </header>
+    <div class="visual">
+        <iframe src="https://my.spline.design/websiteheader-56oT38d9Gw8Sya81k23ORuO1-Jio/" frameborder="0" width="100%" height="100%"></iframe>
+        <div class="visual_hide"></div>
+    </div>
+    <main>
         <!-- <div class="tab">
             <div class="is_on">전체</div>
             <div>굿리치(최근)</div>
@@ -28,7 +29,7 @@
             <div>스핀프로토콜</div>
             <div>개인작업</div>
         </div> -->
-		<div class="container">
+        <div class="inner">
             <ol class="item_list">
                 <li class="item item01">
                     <div class="thumb" style="background-color: #D7D7D7;">
@@ -39,7 +40,7 @@
                     <div class="inbox_wrap">
                         <h3 class="tit">RPA개발</h3>
                         <ul class="link">
-                            <li><a href="https://jungjooo.github.io/resume_real/rpa.html" target="_blank">🧙 <b>RPA 프로젝트 보러가기</b></a></li>
+                            <li><a href="https://jungjooo.github.io/resume_real/rpa.html" target="_blank">🧙 RPA 프로젝트 보러가기</a></li>
                         </ul>
                         <div class="sub">
                             <span class="info">2025.08 ~ 2026.02</span>
@@ -57,7 +58,7 @@
                     <div class="inbox_wrap">
                         <h3 class="tit">운영페이지 리스트업</h3>
                         <ul class="link">
-                            <li><a href="https://jungjooo.github.io/portfolio/rich/manage_site.html" target="_blank">🧙 <b>운영사이트 보러가기</b></a></li>
+                            <li><a href="https://jungjooo.github.io/portfolio/rich/manage_site.html" target="_blank">🧙 운영사이트 보러가기</a></li>
                         </ul>
                         <div class="sub">
                             <span class="info">2021.06 ~ 2021.12 / ㈜굿리치</span>
@@ -405,7 +406,7 @@
                         </div>
                     </div>
                 </li>
-		        <li class="item item04">
+                <li class="item item04">
                     <div class="thumb" style="background-color: #1c1c1c;">
                         <a href="https://jungjooo.github.io/portfolio/else/eone2/eone.html" target="_blank">
                             <img src="https://jungjooo.github.io/resume_real/images/device_eone.png" alt="이원 목업"/>
@@ -422,7 +423,7 @@
                         <div class="sub">
                             <span class="info">2017.10 ~ 2018.03</span>
                             <em class="tag3">개인작업</em>
-				            <em class="tag2">웹디자인</em>
+                            <em class="tag2">웹디자인</em>
                         </div>
                     </div>
                 </li>
@@ -442,109 +443,92 @@
                         <div class="sub">
                             <span class="info">2017.10 ~ 2018.03</span>
                             <em class="tag3">개인작업</em>
-				            <em class="tag2">웹디자인</em>
+                            <em class="tag2">웹디자인</em>
                         </div>
                     </div>
                 </li>
-		    
+            
             </ol>
         </div>
     </main>
-
-    <ul style="display: none;">
-        <li>🍔</li>
-        <li>😀</li>
-        <li>🙅🏻‍♀️</li>
-        <li>🐛</li>
-        <li>🎛</li>
-        <li>🤯</li>
-        <li>🎯</li>
-        <li>📕</li>
-        <li>5️⃣</li>
-        <li>🎨</li>
-        <li>🏆</li>
-        <li>👀</li>
-        <li>🔥</li>
-        <li>📦</li>
-        <li>🌴</li>
-        <li>😑</li>
-        <li>👻</li>
-        <li>👋</li>
-        <li>🐭</li>
-        <li>🥨</li>
-    </ul>
-
+    <footer>
+        <div class="inner">
+            <div class="copyright">
+                © 2026 JJ. All rights reserved.
+            </div>
+            <div class="built">
+                Designed & built by JJ
+            </div>
+        </div>
+    </footer>
     <!-- script -->
     <script>
-        var tabBtn = document.querySelectorAll(".tab div");
-        var itemDiv = document.querySelectorAll(".item");
-        for(var i = 0; i < tabBtn.length; i++){
-            tabBtn[i].addEventListener('click', function(e){
-                e.preventDefault();
-                for(var j = 0; j < tabBtn.length; j++){
-                    tabBtn[j].classList.remove('is_on');
-                }
-                this.classList.add('is_on');
-            });
-        }
-        for(var i=0; i<itemDiv.length; i++){
-            itemDiv[i].classList.add("is_active"); 
-        }
-        tabBtn[0].addEventListener("click", function(){
-            for(var i=0; i<itemDiv.length; i++){
-                if(itemDiv[i].classList.contains("item")==false){
-                    itemDiv[i].classList.remove("is_active");
-                    
-                }else {
-                    itemDiv[i].classList.add("is_active"); 
-                }
+    var tabBtn = document.querySelectorAll(".tab div");
+    var itemDiv = document.querySelectorAll(".item");
+    for(var i = 0; i < tabBtn.length; i++){
+        tabBtn[i].addEventListener('click', function(e){
+            e.preventDefault();
+            for(var j = 0; j < tabBtn.length; j++){
+                tabBtn[j].classList.remove('is_on');
             }
+            this.classList.add('is_on');
         });
-        tabBtn[1].addEventListener("click", function(){
-            for(var i=0; i<itemDiv.length; i++){
-                if(itemDiv[i].classList.contains("item01")==false){
-                    itemDiv[i].classList.remove("is_active");
-                    
-                }else {
-                    itemDiv[i].classList.add("is_active");
-                }
-            }             
-        });
-        tabBtn[2].addEventListener("click", function(){    
-            for(var i=0; i<itemDiv.length; i++){
-                if(itemDiv[i].classList.contains("item02")==false){
-                    itemDiv[i].classList.remove("is_active");
-                }else {
-                    itemDiv[i].classList.add("is_active"); 
-                }
-            }             
-        });
-        tabBtn[3].addEventListener("click", function(){
-            
-            for(var i=0; i<itemDiv.length; i++){
-                if(itemDiv[i].classList.contains("item03")==false){
-                    itemDiv[i].classList.remove("is_active");
-                }else {
-                    itemDiv[i].classList.add("is_active"); 
-                }
-            }             
-        });
-        tabBtn[4].addEventListener("click", function(){
-            
-            for(var i=0; i<itemDiv.length; i++){
-                if(itemDiv[i].classList.contains("item04")==false){
-                    itemDiv[i].classList.remove("is_active");
-                }else {
-                    itemDiv[i].classList.add("is_active"); 
-                }
-            }             
-        });
+    }
+    for(var i=0; i<itemDiv.length; i++){
+        itemDiv[i].classList.add("is_active"); 
+    }
+    tabBtn[0].addEventListener("click", function(){
+        for(var i=0; i<itemDiv.length; i++){
+            if(itemDiv[i].classList.contains("item")==false){
+                itemDiv[i].classList.remove("is_active");
+                
+            }else {
+                itemDiv[i].classList.add("is_active"); 
+            }
+        }
+    });
+    tabBtn[1].addEventListener("click", function(){
+        for(var i=0; i<itemDiv.length; i++){
+            if(itemDiv[i].classList.contains("item01")==false){
+                itemDiv[i].classList.remove("is_active");
+                
+            }else {
+                itemDiv[i].classList.add("is_active");
+            }
+        }             
+    });
+    tabBtn[2].addEventListener("click", function(){    
+        for(var i=0; i<itemDiv.length; i++){
+            if(itemDiv[i].classList.contains("item02")==false){
+                itemDiv[i].classList.remove("is_active");
+            }else {
+                itemDiv[i].classList.add("is_active"); 
+            }
+        }             
+    });
+    tabBtn[3].addEventListener("click", function(){
+        
+        for(var i=0; i<itemDiv.length; i++){
+            if(itemDiv[i].classList.contains("item03")==false){
+                itemDiv[i].classList.remove("is_active");
+            }else {
+                itemDiv[i].classList.add("is_active"); 
+            }
+        }             
+    });
+    tabBtn[4].addEventListener("click", function(){
+        
+        for(var i=0; i<itemDiv.length; i++){
+            if(itemDiv[i].classList.contains("item04")==false){
+                itemDiv[i].classList.remove("is_active");
+            }else {
+                itemDiv[i].classList.add("is_active"); 
+            }
+        }             
+    });
 
 
 
     </script>
-
-
-
 </body>
 </html>
