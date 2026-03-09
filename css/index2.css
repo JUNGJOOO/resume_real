@@ -26,49 +26,50 @@ iframe { width: 100%;}
 .wrap *{ font-size: 16px;}
 .wrap .title { margin-bottom: 20px; font-size: 30px; font-weight: 700;}
 
-.section + .section{margin-top: 100px;}
-.section .item{ position: relative; font-size: 0;}
-.section .item + .item{margin-top: 30px;padding-top: 32px;border-top: 1px solid #ababab;}
-.section .subtitle{ display: inline-block; width: 30%; vertical-align: top;;}
-.section .subtitle .term{font-size: 20px;}
-.section .subtitle .term em{display: block; font-size: 14px; color: blue;}
-.section .subtitle .thumb{ position: absolute; left: 0; bottom: 0; width: 150px;}
-.section .subtitle .thumb img{width: 100%;}
+.section + .section           { margin-top: 100px;}
+.section .item                { position: relative; font-size: 0;}
+.section .item + .item        { margin-top: 30px;padding-top: 32px;border-top: 1px solid #ababab;}
+.section .subtitle            { display: inline-block; width: 30%; vertical-align: top;;}
+.section .subtitle .term      { font-size: 20px;}
+.section .subtitle .term em   { display: block; font-size: 14px; color: blue;}
+.section .subtitle .thumb     { position: absolute; left: 0; bottom: 0; width: 150px;}
+.section .subtitle .thumb img { width: 100%;}
 
-.section .item_wrap{ display: inline-block; width: 70%; vertical-align: top;}
-.item_header .name{line-height: 32px; font-size: 20px; font-weight: 700;}
-.item_header .name span{margin-left: 5px;line-height: 32px;vertical-align: top;}
-.item_header .position{margin-top: 15px; color: gray;}
-.item_wrap:hover .item_url{color: #000;text-decoration: underline;}
-.item_wrap:hover .item_header a{color: #000;text-decoration: underline;}
-.item_body{margin-top: 15px;}
-.info_list{margin: 15px 0 3px; line-height: 2.0;}
+.section .item_wrap            { display: inline-block; width: 70%; vertical-align: top;}
+.item_header .name             { line-height: 32px; font-size: 20px; font-weight: 700;}
+.item_header .name span        { margin-left: 5px;line-height: 32px;vertical-align: top;}
+.item_header .position         { margin-top: 15px; color: gray;}
+.item_wrap:hover .item_url     { color: #000;text-decoration: underline;}
+.item_wrap:hover .item_header a{ color: #000;text-decoration: underline;}
+.item_body { margin-top: 15px;}
+.info_list { margin: 15px 0 3px; line-height: 2.0;}
 .info_list li::marker { content: "-  "; color: #000; font-size: 12px; font-weight: 700;}
 .career_tag span { vertical-align: inherit;}
 .career_tag1 { line-height: 1; padding: 2px 5px; background-color: black; border-radius: 5px; font-size: 11px; color: #fff;vertical-align: middle;}
 .career_tag2 { line-height: 1; padding: 2px 5px; background-color: #fea32d; border-radius: 5px; font-size: 11px; color: #fff;}
 
 /* intro */
-.intro .subtitle img {width: 220px;}
-.intro .item_wrap strong {font-size: 20px; color: #fea32d;}
-.intro .detail { margin-top: 10px;}
-.intro .detail * { font-size: 14px;}
-.intro .detail > div  { font-size: 0;}
-.intro .detail > div + div { margin-top: 5px;}
+.intro .title               { margin: 0;}
+.intro .site a              { display: block; margin-bottom: 30px; font-size: 20px; color: #505050;}
+.intro .subtitle img        { width: 220px;}
+.intro .item_wrap strong    { font-size: 20px; color: #fea32d;}
+.intro .detail              { margin-top: 10px;}
+.intro .detail *            { font-size: 14px;}
+.intro .detail > div        { font-size: 0;}
+.intro .detail > div + div  { margin-top: 5px;}
 .intro .detail > div .label { display: inline-block; width: 60px;}
 .intro .detail > div .value { display: inline-block; width: calc(100% - 60px);}
 
 @media screen and (max-width: 1024px) {
-	.wrap{ width: 90%;;}
-    .intro .subtitle img{width: 150px;}
-    .intro .detail{margin: 10px 0 15px;}
+	.wrap { width: 90%;;}
+    .intro .subtitle img { width: 150px;}
+    .intro .detail { margin: 10px 0 15px;}
 
 }
 @media screen and (max-width: 768px) {
-    .wrap {padding:50px 10px 50px}
-    .wrap *{ font-size: 14px;}
-    .section .subtitle{display: block; width:100%}
-    .section .item_wrap{display: block; width: 100%;}
-    .section .subtitle .thumb img{display: none;}
-	
+    .wrap                         { padding:50px 10px 50px}
+    .wrap *                       { font-size: 14px;}
+    .section .subtitle            { display: block; width:100%}
+    .section .item_wrap           { display: block; width: 100%;}
+    .section .subtitle .thumb img { display: none;}
 }
