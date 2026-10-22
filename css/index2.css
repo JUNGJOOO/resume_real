@@ -50,7 +50,7 @@ iframe { width: 100%;}
 
 /* intro */
 .intro .title               { margin: 0;}
-.intro .site a              { display: block; margin-bottom: 30px; font-size: 20px; color: #505050;}
+.intro .site a              { display: block; margin-bottom: 30px; font-size: 20px; color: #505050; word-break: break-all; overflow-wrap: break-word;}
 .intro .subtitle img        { width: 220px;}
 .intro .item_wrap strong    { font-size: 20px; color: #fea32d;}
 .intro .detail              { margin-top: 10px;}
