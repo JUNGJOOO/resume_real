@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* nav_float: scroll-aware floating nav shared across resume_real pages (resume.html, index.html).
+   Expanded pill by default, collapses to a small circle on scroll-down, re-expands on
+   scroll-up or click (vanilla port of the framer-motion AnimatedNavFramer pattern).
+   Positioning here is a generic, page-agnostic default (right:20px) — a page with its own
+   centered content column (e.g. resume.html's 1024px .flow_inner) may override `.nav_float`'s
+   `right` value afterward to align with that column instead. */
+
+.nav_float {
+    position: fixed;
+    top: 35px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 999px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    overflow: hidden;
+    z-index: 1000;
+    width: var(--nav-float-width, auto);
+    transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-family: 'Pretendard', sans-serif;
+}
+.nav_float.is-collapsed {
+    width: 48px;
+    cursor: pointer;
+}
+.nav_float_icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_float_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+    grid-template-rows: repeat(2, 5px);
+    gap: 3px;
+}
+.nav_float_grid_dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 1px;
+    background: #1a1a1a;
+}
+.nav_float_links {
+    display: flex;
+    padding-right: 14px;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+}
+.nav_float.is-collapsed .nav_float_links {
+    opacity: 0;
+    pointer-events: none;
+}
+.nav_float_link {
+    position: relative;
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #505050;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+.nav_float_link:hover,
+.nav_float_link.is-active { text-decoration: none; font-weight: 700; color: #1a1a1a;}
+/* reserve width for the bold state so hover/active doesn't shift surrounding layout */
+.nav_float_link::after {
+    content: attr(data-text);
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .nav_float_link { padding: 7px 10px; font-size: 12px;}
+}

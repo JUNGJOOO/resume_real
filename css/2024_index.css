@@ -116,3 +116,12 @@ main{margin-bottom: 80px;}
 	.item_list .thumb img  { width: 100%;}
 	.item_list .inbox_wrap { padding: 25px 20px;}
 }
+
+/* nav_float position override: width constant unified with resume.html (css/resume.css)
+   per explicit request, so both pages compute the nav's position off the same 1024px
+   column — independent of .inner's own 1200px layout width, which stays untouched. */
+.nav_float { right: calc((100vw - 1024px) / 2 + 10px);}
+
+@media screen and (max-width: 1024px) {
+	.nav_float { right: calc(5% + 10px);}
+}
